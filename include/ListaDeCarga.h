@@ -44,9 +44,9 @@ class ListaDeCarga {
         /**
          * @brief Obtiene el mensaje completo como una cadena (para testing)
          * @param buffer Buffer donde almacenar el mensaje
-         * @param tamaño Tamaño máximo del buffer
+         * @param tamano Tamano máximo del buffer
          */
-        void obtenerMensaje(char* buffer, int tamaño);
+        void obtenerMensaje(char* buffer, int tamano);
 };
 
 #endif

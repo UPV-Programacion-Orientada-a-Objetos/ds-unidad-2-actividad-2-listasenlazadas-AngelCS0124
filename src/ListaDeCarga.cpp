@@ -43,13 +43,13 @@ void ListaDeCarga::imprimirMensaje() {
     std::cout << "]";
 }
 
-void ListaDeCarga::obtenerMensaje(char* buffer, int tamaño) {
-    if (!buffer || tamaño <= 0) return;
+void ListaDeCarga::obtenerMensaje(char* buffer, int tamano) {
+    if (!buffer || tamano <= 0) return;
     
     NodoDoble* actual = cabeza;
     int pos = 0;
     
-    while (actual && pos < tamaño - 1) {
+    while (actual && pos < tamano - 1) {
         buffer[pos++] = actual->dato;
         actual = actual->siguiente;
     }

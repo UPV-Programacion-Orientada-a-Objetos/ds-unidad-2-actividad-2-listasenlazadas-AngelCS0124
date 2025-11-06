@@ -54,29 +54,17 @@ void RotorDeMapeo::rotar(int n) {
 }
 
 char RotorDeMapeo::getMapeo(char entrada) {
-    if (!cabeza) return entrada;
-    
-    // Caracteres que no son letras se devuelven sin cambios
-    if (entrada < 'A' || entrada > 'Z') {
+    if (!cabeza || entrada < 'A' || entrada > 'Z') {
         return entrada;
     }
     
-    // Encontrar la posición del carácter de entrada relativa a la cabeza
-    NodoCircular* actual = cabeza;
-    int posicion = 0;
+    // Encontrar la posición del carácter de entrada relativo a 'A'
+    int posicionEntrada = entrada - 'A';
     
-    do {
-        if (actual->dato == entrada) {
-            break;
-        }
-        actual = actual->siguiente;
-        posicion++;
-    } while (actual != cabeza);
-    
-    // El carácter mapeado es el que está en la posición 'cabeza' 
-    // si el carácter de entrada estuviera en esa posición
+    // Aplicar rotación: el carácter mapeado está desplazado
+    // por la posición actual de la cabeza
     NodoCircular* mapeado = cabeza;
-    for (int i = 0; i < posicion; i++) {
+    for (int i = 0; i < posicionEntrada; i++) {
         mapeado = mapeado->siguiente;
     }
     

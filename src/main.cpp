@@ -16,33 +16,10 @@
  */
 int main() {
     std::cout << "=== DECODIFICADOR PRT-7 ===" << std::endl;
-    std::cout << "Sistema de ciberseguridad industrial" << std::endl << std::endl;
     
     Decodificador decodificador;
-    
-    // Datos de ejemplo del Arduino (simulados)
-    const char* tramasEjemplo[] = {
-        "L,H",
-        "L,O", 
-        "L,L",
-        "M,2",
-        "L,A",
-        "L, ",
-        "L,W",
-        "M,-2",
-        "L,O",
-        "L,R",
-        "L,L",
-        "L,D"
-    };
-    
-    int numTramas = sizeof(tramasEjemplo) / sizeof(tramasEjemplo[0]);
-    
-    // Procesar datos de ejemplo
-    decodificador.procesarDatos(tramasEjemplo, numTramas);
-    
-    // Para usar con puerto serial real, descomentar:
-    // decodificador.iniciarComunicacionSerial("COM3");
+
+    decodificador.iniciarComunicacionSerial("COM6");
     
     return 0;
 }
