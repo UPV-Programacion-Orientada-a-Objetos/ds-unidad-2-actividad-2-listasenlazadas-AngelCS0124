@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Mapeo y Routing: Archivo de código fuente include/Decodificador.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Mapeo y Routing<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de decodificación de tramas y enrutamiento con estructuras de datos circulares</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('Decodificador_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Decodificador.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Decodificador_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef DECODIFICADOR_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define DECODIFICADOR_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="TramaBase_8h.html">TramaBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="ListaDeCarga_8h.html">ListaDeCarga.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="RotorDeMapeo_8h.html">RotorDeMapeo.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classDecodificador.html">   19</a></span><span class="keyword">class </span><a class="code hl_function" href="classDecodificador.html#a03c60e464b5a6964d5b29c6ded94377d">Decodificador</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classDecodificador.html#ab54b7fdc752977fa052835bfe0eb490c">   21</a></span>        <a class="code hl_class" href="classListaDeCarga.html">ListaDeCarga</a> <a class="code hl_variable" href="classDecodificador.html#ab54b7fdc752977fa052835bfe0eb490c">listaCarga</a>;  </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classDecodificador.html#a4d80d62ec0bd1dd46a9a9584661ef95c">   22</a></span>        <a class="code hl_class" href="classRotorDeMapeo.html">RotorDeMapeo</a> <a class="code hl_variable" href="classDecodificador.html#a4d80d62ec0bd1dd46a9a9584661ef95c">rotor</a>;       </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_class" href="classTramaBase.html">TramaBase</a>* <a class="code hl_function" href="classDecodificador.html#ad0a7afd51f4f998da4139d2e62f4157e">parsearLinea</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* linea);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classDecodificador.html#ab2ca612cfdc786e496959c0c649bb56d">procesarTrama</a>(<a class="code hl_class" href="classTramaBase.html">TramaBase</a>* trama);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_function" href="classDecodificador.html#a03c60e464b5a6964d5b29c6ded94377d">Decodificador</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classDecodificador.html#a9422943c79d3443c47cc908aebfcf448">procesarDatos</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>** lineas, <span class="keywordtype">int</span> numLineas);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classDecodificador.html#a6038758efb372c94fbbea255437886b7">iniciarComunicacionSerial</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* puerto);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classDecodificador.html#ad2457b88affeb9904296eb4c57203e4d">mostrarMensajeFinal</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aListaDeCarga_8h_html"><div class="ttname"><a href="ListaDeCarga_8h.html">ListaDeCarga.h</a></div><div class="ttdoc">Definición de la lista doblemente enlazada para almacenar carga.</div></div>
+<div class="ttc" id="aRotorDeMapeo_8h_html"><div class="ttname"><a href="RotorDeMapeo_8h.html">RotorDeMapeo.h</a></div><div class="ttdoc">Definición del rotor de mapeo (lista circular).</div></div>
+<div class="ttc" id="aTramaBase_8h_html"><div class="ttname"><a href="TramaBase_8h.html">TramaBase.h</a></div><div class="ttdoc">Definición de la clase base abstracta para todas las tramas.</div></div>
+<div class="ttc" id="aclassDecodificador_html_a03c60e464b5a6964d5b29c6ded94377d"><div class="ttname"><a href="classDecodificador.html#a03c60e464b5a6964d5b29c6ded94377d">Decodificador::Decodificador</a></div><div class="ttdeci">Decodificador()</div><div class="ttdoc">Constructor del decodificador.</div><div class="ttdef"><b>Definition</b> <a href="Decodificador_8cpp_source.html#l00046">Decodificador.cpp:46</a></div></div>
+<div class="ttc" id="aclassDecodificador_html_a4d80d62ec0bd1dd46a9a9584661ef95c"><div class="ttname"><a href="classDecodificador.html#a4d80d62ec0bd1dd46a9a9584661ef95c">Decodificador::rotor</a></div><div class="ttdeci">RotorDeMapeo rotor</div><div class="ttdoc">Rotor para operaciones de mapeo.</div><div class="ttdef"><b>Definition</b> <a href="#l00022">Decodificador.h:22</a></div></div>
+<div class="ttc" id="aclassDecodificador_html_a6038758efb372c94fbbea255437886b7"><div class="ttname"><a href="classDecodificador.html#a6038758efb372c94fbbea255437886b7">Decodificador::iniciarComunicacionSerial</a></div><div class="ttdeci">void iniciarComunicacionSerial(const char *puerto)</div><div class="ttdoc">Inicia la comunicación serial y procesa datos en tiempo real.</div><div class="ttdef"><b>Definition</b> <a href="Decodificador_8cpp_source.html#l00097">Decodificador.cpp:97</a></div></div>
+<div class="ttc" id="aclassDecodificador_html_a9422943c79d3443c47cc908aebfcf448"><div class="ttname"><a href="classDecodificador.html#a9422943c79d3443c47cc908aebfcf448">Decodificador::procesarDatos</a></div><div class="ttdeci">void procesarDatos(const char **lineas, int numLineas)</div><div class="ttdoc">Procesa múltiples líneas de datos (para testing).</div><div class="ttdef"><b>Definition</b> <a href="Decodificador_8cpp_source.html#l00081">Decodificador.cpp:81</a></div></div>
+<div class="ttc" id="aclassDecodificador_html_ab2ca612cfdc786e496959c0c649bb56d"><div class="ttname"><a href="classDecodificador.html#ab2ca612cfdc786e496959c0c649bb56d">Decodificador::procesarTrama</a></div><div class="ttdeci">void procesarTrama(TramaBase *trama)</div><div class="ttdoc">Procesa una trama individual.</div><div class="ttdef"><b>Definition</b> <a href="Decodificador_8cpp_source.html#l00074">Decodificador.cpp:74</a></div></div>
+<div class="ttc" id="aclassDecodificador_html_ab54b7fdc752977fa052835bfe0eb490c"><div class="ttname"><a href="classDecodificador.html#ab54b7fdc752977fa052835bfe0eb490c">Decodificador::listaCarga</a></div><div class="ttdeci">ListaDeCarga listaCarga</div><div class="ttdoc">Lista para almacenar datos decodificados.</div><div class="ttdef"><b>Definition</b> <a href="#l00021">Decodificador.h:21</a></div></div>
+<div class="ttc" id="aclassDecodificador_html_ad0a7afd51f4f998da4139d2e62f4157e"><div class="ttname"><a href="classDecodificador.html#ad0a7afd51f4f998da4139d2e62f4157e">Decodificador::parsearLinea</a></div><div class="ttdeci">TramaBase * parsearLinea(const char *linea)</div><div class="ttdoc">Parsea una línea recibida y crea la trama correspondiente.</div><div class="ttdef"><b>Definition</b> <a href="Decodificador_8cpp_source.html#l00050">Decodificador.cpp:50</a></div></div>
+<div class="ttc" id="aclassDecodificador_html_ad2457b88affeb9904296eb4c57203e4d"><div class="ttname"><a href="classDecodificador.html#ad2457b88affeb9904296eb4c57203e4d">Decodificador::mostrarMensajeFinal</a></div><div class="ttdeci">void mostrarMensajeFinal()</div><div class="ttdoc">Muestra el mensaje decodificado final.</div><div class="ttdef"><b>Definition</b> <a href="Decodificador_8cpp_source.html#l00118">Decodificador.cpp:118</a></div></div>
+<div class="ttc" id="aclassListaDeCarga_html"><div class="ttname"><a href="classListaDeCarga.html">ListaDeCarga</a></div><div class="ttdoc">Lista doblemente enlazada para almacenar caracteres decodificados.</div><div class="ttdef"><b>Definition</b> <a href="ListaDeCarga_8h_source.html#l00017">ListaDeCarga.h:17</a></div></div>
+<div class="ttc" id="aclassRotorDeMapeo_html"><div class="ttname"><a href="classRotorDeMapeo.html">RotorDeMapeo</a></div><div class="ttdoc">Lista circular doblemente enlazada para operaciones de mapeo.</div><div class="ttdef"><b>Definition</b> <a href="RotorDeMapeo_8h_source.html#l00017">RotorDeMapeo.h:17</a></div></div>
+<div class="ttc" id="aclassTramaBase_html"><div class="ttname"><a href="classTramaBase.html">TramaBase</a></div><div class="ttdoc">Clase base abstracta que define la interfaz para procesar tramas.</div><div class="ttdef"><b>Definition</b> <a href="TramaBase_8h_source.html#l00019">TramaBase.h:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="Decodificador_8h.html">Decodificador.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

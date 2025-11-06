@@ -1,0 +1,11 @@
+digraph "Serial::~Serial"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Serial::~Serial",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Destructor que cierra la conexión serial."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Serial::cerrar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classSerial.html#ae14e676b9c9248ab60a18c6676c6fc7d",tooltip="Cierra la conexión serial."];
+}
