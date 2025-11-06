@@ -17,18 +17,18 @@ class RotorDeMapeo;
  * @brief Clase base abstracta para todas las tramas del protocolo PRT-7
  */
 class TramaBase {
-public:
-    /**
-     * @brief Procesa la trama usando las estructuras de datos proporcionadas
-     * @param carga Puntero a la lista de carga para almacenar datos decodificados
-     * @param rotor Puntero al rotor de mapeo para operaciones de cifrado
-     */
-    virtual void procesar(ListaDeCarga* carga, RotorDeMapeo* rotor) = 0;
-    
-    /**
-     * @brief Destructor virtual para garantizar limpieza adecuada de memoria
-     */
-    virtual ~TramaBase() {}
+    public:
+        /**
+         * @brief Procesa la trama usando las estructuras de datos proporcionadas
+         * @param carga Puntero a la lista de carga para almacenar datos decodificados
+         * @param rotor Puntero al rotor de mapeo para operaciones de cifrado
+         */
+        virtual void procesar(ListaDeCarga* carga, RotorDeMapeo* rotor) = 0;
+        
+        /**
+         * @brief Destructor virtual para garantizar limpieza adecuada de memoria
+         */
+        virtual ~TramaBase() {}
 };
 
 #endif

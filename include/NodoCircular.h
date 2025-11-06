@@ -13,16 +13,16 @@
  * @brief Nodo para listas circulares que almacena un carácter
  */
 class NodoCircular {
-public:
-    char dato;            ///< Carácter almacenado en el nodo
-    NodoCircular* anterior; ///< Puntero al nodo anterior
-    NodoCircular* siguiente; ///< Puntero al nodo siguiente
-    
-    /**
-     * @brief Constructor que inicializa el nodo con un carácter
-     * @param d Carácter a almacenar
-     */
-    NodoCircular(char d);
+    public:
+        char dato;            ///< Carácter almacenado en el nodo
+        NodoCircular* anterior; ///< Puntero al nodo anterior
+        NodoCircular* siguiente; ///< Puntero al nodo siguiente
+        
+        /**
+         * @brief Constructor que inicializa el nodo con un carácter
+         * @param d Carácter a almacenar
+         */
+        NodoCircular(char d);
 };
 
 #endif

@@ -18,22 +18,22 @@
  * @brief Representa una trama de carga que contiene un carácter a procesar
  */
 class TramaLoad : public TramaBase {
-private:
-    char dato; ///< Carácter contenido en la trama
+    private:
+        char dato; ///< Carácter contenido en la trama
 
-public:
-    /**
-     * @brief Constructor que inicializa la trama con un carácter
-     * @param d Carácter a almacenar en la trama
-     */
-    TramaLoad(char d);
-    
-    /**
-     * @brief Procesa la trama de carga decodificando el carácter
-     * @param carga Lista donde insertar el carácter decodificado
-     * @param rotor Rotor usado para el mapeo del carácter
-     */
-    void procesar(ListaDeCarga* carga, RotorDeMapeo* rotor) override;
+    public:
+        /**
+         * @brief Constructor que inicializa la trama con un carácter
+         * @param d Carácter a almacenar en la trama
+         */
+        TramaLoad(char d);
+        
+        /**
+         * @brief Procesa la trama de carga decodificando el carácter
+         * @param carga Lista donde insertar el carácter decodificado
+         * @param rotor Rotor usado para el mapeo del carácter
+         */
+        void procesar(ListaDeCarga* carga, RotorDeMapeo* rotor) override;
 };
 
 #endif
