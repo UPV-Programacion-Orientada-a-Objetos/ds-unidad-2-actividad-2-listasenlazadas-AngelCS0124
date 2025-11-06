@@ -7,7 +7,7 @@
  * utilizando listas doblemente enlazadas para almacenamiento y listas circulares para mapeo.
  */
 
-#include "Decodificador.h"
+#include "../include/Decodificador.h"
 #include <iostream>
 
 /**

@@ -3,8 +3,8 @@
  * @brief Implementación de la lista de carga
  */
 
-#include "ListaDeCarga.h"
-#include "NodoDoble.h"
+#include "../include/ListaDeCarga.h"
+#include "../include/NodoDoble.h"
 #include <iostream>
 
 ListaDeCarga::ListaDeCarga() : cabeza(nullptr), cola(nullptr) {}

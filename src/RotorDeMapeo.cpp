@@ -3,8 +3,8 @@
  * @brief Implementación del rotor de mapeo
  */
 
-#include "RotorDeMapeo.h"
-#include "NodoCircular.h"
+#include "../include/RotorDeMapeo.h"
+#include "../include/NodoCircular.h"
 #include <iostream>
 
 RotorDeMapeo::RotorDeMapeo() : cabeza(nullptr) {

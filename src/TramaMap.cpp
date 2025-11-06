@@ -3,8 +3,8 @@
  * @brief Implementación de la clase TramaMap
  */
 
-#include "TramaMap.h"
-#include "RotorDeMapeo.h"
+#include "../include/TramaMap.h"
+#include "../include/RotorDeMapeo.h"
 #include <iostream>
 
 TramaMap::TramaMap(int valor) : valorRotacion(valor) {}

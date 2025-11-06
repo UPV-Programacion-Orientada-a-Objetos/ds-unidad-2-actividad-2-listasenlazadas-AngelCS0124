@@ -3,9 +3,9 @@
  * @brief Implementación de la clase TramaLoad
  */
 
-#include "TramaLoad.h"
-#include "ListaDeCarga.h"
-#include "RotorDeMapeo.h"
+#include "../include/TramaLoad.h"
+#include "../include/ListaDeCarga.h"
+#include "../include/RotorDeMapeo.h"
 #include <iostream>
 
 TramaLoad::TramaLoad(char d) : dato(d) {}

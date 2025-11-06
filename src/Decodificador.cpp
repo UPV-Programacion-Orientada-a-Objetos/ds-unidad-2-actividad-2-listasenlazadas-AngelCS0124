@@ -3,10 +3,10 @@
  * @brief Implementación del decodificador principal
  */
 
-#include "Decodificador.h"
-#include "TramaLoad.h"
-#include "TramaMap.h"
-#include "Serial.h"
+#include "../include/Decodificador.h"
+#include "../include/TramaLoad.h"
+#include "../include/TramaMap.h"
+#include "../include/Serial.h"
 #include <iostream>
 
 // Función personalizada para calcular longitud de cadena

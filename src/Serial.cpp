@@ -3,7 +3,7 @@
  * @brief Implementación de la comunicación serial (versión simulada)
  */
 
-#include "Serial.h"
+#include "../include/Serial.h"
 #include <iostream>
 
 // Versión simulada para ESP32 - en entorno real se implementaría con APIs específicas
